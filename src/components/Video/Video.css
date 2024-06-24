@@ -1,0 +1,75 @@
+/* Video.css */
+.card {
+  width: calc(100% / 3 - 10px);
+  margin: 10px 5px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dis {
+  padding: 10px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.channel {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.channel span {
+  margin-right: 5px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.views {
+  font-size: 0.9rem;
+}
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+
+  .thumbnail {
+    height: 200px;
+  }
+
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .channel span {
+    font-size: 0.8rem;
+  }
+
+  .views {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,42 @@
+.channel-info {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #202020;
+}
+
+.channel-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.channel-details {
+  text-align: left;
+}
+
+.channel-details h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.channel-details p {
+  margin: 5px 0;
+}
+
+.channel-details button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #cc0000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.channel-video li:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}

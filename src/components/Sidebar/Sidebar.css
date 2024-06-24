@@ -1,0 +1,73 @@
+/* src/components/Sidebar/Sidebar.css */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: #181818;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  z-index: 1; /* Ensure sidebar appears above other content */
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar__section {
+  margin-bottom: 20px;
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.sidebar__item:hover {
+  background-color: #383838;
+  color: white;
+}
+
+.sidebar__item svg {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 10px 0;
+}
+
+/* Close button for mobile */
+.sidebar__close {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 576px) {
+  .sidebar {
+    width: 40%;
+    height: 100%;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 132px;
+    left: 0;
+  }
+
+  /* Show close button for mobile */
+  .sidebar.open .sidebar__close {
+    display: block;
+  }
+}

@@ -1,0 +1,53 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.coming-soon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://i.pinimg.com/564x/7b/4d/fa/7b4dfadca0e599d98bef3f3dda7b48b9.jpg")
+    no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+}
+
+.coming-soon-content {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adds a black overlay for better text visibility */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.coming-soon-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.coming-soon-subtitle {
+  font-size: 1.5em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .coming-soon-title {
+    font-size: 2em;
+  }
+  .coming-soon-subtitle {
+    font-size: 1em;
+  }
+}

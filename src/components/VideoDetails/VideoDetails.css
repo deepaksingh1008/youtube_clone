@@ -1,0 +1,127 @@
+.video-details {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+}
+
+.video-comment {
+  width: 100%;
+  margin: 10px;
+}
+
+.video-setion {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.comment-section {
+  width: 100%;
+}
+
+.v-title {
+  padding: 2px;
+}
+
+.v-suscribe {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.suscribe-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.suscribe-btn button {
+  border-radius: 50px;
+  padding: 4px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.share-section {
+  display: flex;
+  gap: 5px;
+}
+
+.share-section div {
+  border-radius: 50px;
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid rgb(179, 170, 170);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.v-description {
+  padding: 2px;
+}
+
+.v-comments {
+  padding: 2px;
+  box-shadow: #97999af5 0px 0px 0px 3px;
+  border-radius: 2px;
+}
+
+.side-video {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+
+@media (min-width: 800px) {
+  .video-details {
+    flex-direction: row;
+  }
+
+  .video-comment {
+    width: 70%;
+  }
+
+  .side-video {
+    width: 30%;
+    margin: 10px;
+  }
+
+  .v-suscribe {
+    flex-direction: row;
+    align-items: center;
+  }
+  .not-show {
+    display: none;
+  }
+}
+
+.l-icon svg {
+  width: 26px;
+  height: 25px;
+  cursor: pointer;
+}

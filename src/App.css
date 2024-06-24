@@ -1,0 +1,70 @@
+/* src/App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app__body {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  /* Adjust this value based on sidebar width */
+  padding: 20px;
+  width: 100%;
+  overflow-y: auto;
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .videos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-content {
+    margin-left: 0 !important;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+/* src/components/PageNotFound.css */
+.page-not-found {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.page-not-found h1 {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+
+.page-not-found p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.page-not-found a {
+  font-size: 1.2em;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.page-not-found a:hover {
+  text-decoration: underline;
+}
